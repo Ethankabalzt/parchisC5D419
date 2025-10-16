@@ -35,7 +35,10 @@ public class PanelJuego extends javax.swing.JPanel {
     public void paintComponent(Graphics g) {
         super.paintComponent(g);
         tableroGrafico.paintIcon(this, g, 0, 0);
-        ficha.paintIcon(this, g, 453, 468);
+        //ficha.paintIcon(this, g, 453, 468);
+        if(controlador!=null){
+        controlador.dibujar(this, g);
+        }//fin if
     }
 
     /**

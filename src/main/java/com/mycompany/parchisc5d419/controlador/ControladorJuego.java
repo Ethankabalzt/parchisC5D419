@@ -34,7 +34,10 @@ public class ControladorJuego implements ActionListener, MouseListener {
         this.guiPrincipal = guiPrincipal;
         guiJuego = new GUIJuego(this);
         guiJuego.setVisible(true);
-        ficha=new Ficha(new Posicion(453,468), new ImageIcon("./src/main/resources/img/pieceyellow.png"),"Amarillo");
+        panelJuego=guiJuego.getPanelJuego();
+        panelControl=guiJuego.getPanelControl();
+        ficha=new Ficha(new Posicion(100,100), new ImageIcon("./src/main/resources/img/pieceyellow.png"),"Amarillo");
+        //(453,468)
     }
     
     public void dibujar(Component c, Graphics g){
@@ -57,6 +60,9 @@ public class ControladorJuego implements ActionListener, MouseListener {
     @Override
     public void mouseClicked(MouseEvent e) {
         System.out.println("X " + e.getX() + "Y " + e.getY());
+        ficha.getPosicion().setX(e.getX());
+        ficha.getPosicion().setY(e.getY());
+        panelJuego.repaint();
     }
 
     @Override

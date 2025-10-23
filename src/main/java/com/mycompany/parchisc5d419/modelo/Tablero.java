@@ -33,8 +33,24 @@ public class Tablero {
         }
         tablero[4] = new CeldaEspecialColor(new Posicion(x, y), "Salida Amarillo", "Amarillo");
         tablero[4].setFicha(new Ficha(new Posicion(x, y), new ImageIcon("./src/main/resources/img/pieceblack1.png"), "Negro"));
+        y -= 30;
+        
+        for (int indice = 5; indice < 8; indice++) {
+            tablero[indice] = new Celda(new Posicion(x, y));
+            tablero[indice].setFicha(new Ficha(new Posicion(x, y), new ImageIcon("./src/main/resources/img/pieceblack.png"), "Negro"));
+            y -= 30;
+        }
+        x=383;
+        y=349;
+        for (int indice = 8; indice < 11; indice++) {
+            tablero[indice] = new Celda(new Posicion(x, y));
+            tablero[indice].setFicha(new Ficha(new Posicion(x, y), new ImageIcon("./src/main/resources/img/pieceblack.png"), "Negro"));
+            x+= 30;
+        }
+        tablero[11] = new CeldaEspecial(new Posicion(x, y), "Zona Segura");
+        tablero[11].setFicha(new Ficha(new Posicion(x, y), new ImageIcon("./src/main/resources/img/pieceblack1.png"), "Negro"));
 
-    }
+    }//fin iniciar
 
     public void crearCasas(String colorJugador1) {
         if (colorJugador1.equals("Amarillo")) {

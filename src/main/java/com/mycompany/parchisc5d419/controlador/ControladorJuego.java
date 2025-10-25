@@ -32,27 +32,40 @@ public class ControladorJuego implements ActionListener, MouseListener {
     private Ficha ficha;
     private AreaJuego areaJuego;
 
+    //Turnos
+    private int turnoActual = 0; // 0 = Jugador 1, 1 = Jugador 2
+    private String[] jugadores = {"Jugador 1", "Jugador 2"};
+    private String[] colores = {"Amarillo", "Azul"};
+
     public ControladorJuego(GUIPrincipal guiPrincipal) {
         this.guiPrincipal = guiPrincipal;
         guiJuego = new GUIJuego(this);
         guiJuego.setVisible(true);
-        panelJuego=guiJuego.getPanelJuego();
-        panelControl=guiJuego.getPanelControl();
-        areaJuego=new AreaJuego();
-        ficha=new Ficha(new Posicion(100,100), new ImageIcon("./src/main/resources/img/pieceyellow.png"),"Amarillo");
+        panelJuego = guiJuego.getPanelJuego();
+        panelControl = guiJuego.getPanelControl();
+        areaJuego = new AreaJuego();
+        ficha = new Ficha(new Posicion(100, 100), new ImageIcon("./src/main/resources/img/pieceyellow.png"), "Amarillo");
         //(453,468)
     }
-    
-    public void dibujar(Component c, Graphics g){
-       ficha.dibujar(c, g);
-       areaJuego.dibujar(c, g);
+
+    public void dibujar(Component c, Graphics g) {
+        ficha.dibujar(c, g);
+        areaJuego.dibujar(c, g);
     }
 
     @Override
     public void actionPerformed(ActionEvent e) {
         switch (e.getActionCommand()) {
             case "Dado":
-                System.out.println("Presiono dado");
+                int dado = (int) (Math.random() * 6) + 1;
+                System.out.println("\n========== TURNO ==========");
+                System.out.println("Jugador: " + jugadores[turnoActual]);
+                System.out.println("Color: " + colores[turnoActual]);
+                System.out.println("Resultado dado: " + dado);
+                System.out.println("==========================\n");
+
+                //Cambia de turno
+                turnoActual = (turnoActual + 1) % 2;
                 break;
             case "Atras":
                 guiJuego.dispose();

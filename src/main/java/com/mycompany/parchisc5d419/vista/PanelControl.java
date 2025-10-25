@@ -39,8 +39,9 @@ public class PanelControl extends javax.swing.JPanel {
 
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        btnDado.setText("Dado");
-        add(btnDado, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 40, -1, -1));
+        btnDado.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/dado1.png"))); // NOI18N
+        btnDado.setActionCommand("Dado");
+        add(btnDado, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 50, 230, 40));
 
         btnAtras.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/botonAtras.png"))); // NOI18N
         btnAtras.setActionCommand("Atras");

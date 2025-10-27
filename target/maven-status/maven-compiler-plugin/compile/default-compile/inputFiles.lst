@@ -1,6 +1,7 @@
 C:\Users\Usuario\Documents\NetBeansProjects\parchisC5D419\src\main\java\com\mycompany\parchisc5d419\controlador\ControladorJuego.java
 C:\Users\Usuario\Documents\NetBeansProjects\parchisC5D419\src\main\java\com\mycompany\parchisc5d419\controlador\ControladorPrincipal.java
 C:\Users\Usuario\Documents\NetBeansProjects\parchisC5D419\src\main\java\com\mycompany\parchisc5d419\modelo\AreaJuego.java
+C:\Users\Usuario\Documents\NetBeansProjects\parchisC5D419\src\main\java\com\mycompany\parchisc5d419\modelo\BancoPregunta.java
 C:\Users\Usuario\Documents\NetBeansProjects\parchisC5D419\src\main\java\com\mycompany\parchisc5d419\modelo\Casa.java
 C:\Users\Usuario\Documents\NetBeansProjects\parchisC5D419\src\main\java\com\mycompany\parchisc5d419\modelo\Celda.java
 C:\Users\Usuario\Documents\NetBeansProjects\parchisC5D419\src\main\java\com\mycompany\parchisc5d419\modelo\CeldaEspecial.java
@@ -8,12 +9,14 @@ C:\Users\Usuario\Documents\NetBeansProjects\parchisC5D419\src\main\java\com\myco
 C:\Users\Usuario\Documents\NetBeansProjects\parchisC5D419\src\main\java\com\mycompany\parchisc5d419\modelo\Ficha.java
 C:\Users\Usuario\Documents\NetBeansProjects\parchisC5D419\src\main\java\com\mycompany\parchisc5d419\modelo\Jugador.java
 C:\Users\Usuario\Documents\NetBeansProjects\parchisC5D419\src\main\java\com\mycompany\parchisc5d419\modelo\Posicion.java
+C:\Users\Usuario\Documents\NetBeansProjects\parchisC5D419\src\main\java\com\mycompany\parchisc5d419\modelo\Pregunta.java
 C:\Users\Usuario\Documents\NetBeansProjects\parchisC5D419\src\main\java\com\mycompany\parchisc5d419\modelo\Tablero.java
 C:\Users\Usuario\Documents\NetBeansProjects\parchisC5D419\src\main\java\com\mycompany\parchisc5d419\ParchisC5D419.java
 C:\Users\Usuario\Documents\NetBeansProjects\parchisC5D419\src\main\java\com\mycompany\parchisc5d419\vista\GUICredito.java
 C:\Users\Usuario\Documents\NetBeansProjects\parchisC5D419\src\main\java\com\mycompany\parchisc5d419\vista\GUIHistoria.java
 C:\Users\Usuario\Documents\NetBeansProjects\parchisC5D419\src\main\java\com\mycompany\parchisc5d419\vista\GUIInstrucciones.java
 C:\Users\Usuario\Documents\NetBeansProjects\parchisC5D419\src\main\java\com\mycompany\parchisc5d419\vista\GUIJuego.java
+C:\Users\Usuario\Documents\NetBeansProjects\parchisC5D419\src\main\java\com\mycompany\parchisc5d419\vista\GUIJugador.java
 C:\Users\Usuario\Documents\NetBeansProjects\parchisC5D419\src\main\java\com\mycompany\parchisc5d419\vista\GUIPrincipal.java
 C:\Users\Usuario\Documents\NetBeansProjects\parchisC5D419\src\main\java\com\mycompany\parchisc5d419\vista\PanelControl.java
 C:\Users\Usuario\Documents\NetBeansProjects\parchisC5D419\src\main\java\com\mycompany\parchisc5d419\vista\PanelJuego.java

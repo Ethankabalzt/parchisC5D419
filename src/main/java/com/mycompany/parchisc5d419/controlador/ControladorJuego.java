@@ -64,7 +64,7 @@ public class ControladorJuego implements ActionListener, MouseListener {
                 System.out.println("Resultado dado: " + dado);
                 System.out.println("==========================\n");
 
-                //Cambia de turno
+                //Cambia de turno alternando de 0 a 1
                 turnoActual = (turnoActual + 1) % 2;
                 break;
             case "Atras":

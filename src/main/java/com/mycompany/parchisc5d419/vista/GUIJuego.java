@@ -5,13 +5,13 @@
 package com.mycompany.parchisc5d419.vista;
 
 import com.mycompany.parchisc5d419.controlador.ControladorJuego;
+import javax.swing.JOptionPane;
 
 /**
  *
  * @author Usuario
  */
 public class GUIJuego extends javax.swing.JFrame {
-    
 
     /**
      * Creates new form GUIJuego
@@ -29,8 +29,14 @@ public class GUIJuego extends javax.swing.JFrame {
     public PanelJuego getPanelJuego() {
         return panelJuego;
     }
-    
-    
+
+    public void showMessage(String mensaje) {
+        JOptionPane.showMessageDialog(null, mensaje);
+    }
+
+    public int inputRespuesta(String mensaje) {
+        return JOptionPane.showConfirmDialog(null, mensaje);
+    }
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -69,7 +75,6 @@ public class GUIJuego extends javax.swing.JFrame {
     /**
      * @param args the command line arguments
      */
-    
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private com.mycompany.parchisc5d419.vista.PanelControl panelControl;

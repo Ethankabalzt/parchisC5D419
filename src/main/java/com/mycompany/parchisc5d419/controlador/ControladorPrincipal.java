@@ -7,6 +7,7 @@ package com.mycompany.parchisc5d419.controlador;
 import com.mycompany.parchisc5d419.vista.GUICredito;
 import com.mycompany.parchisc5d419.vista.GUIHistoria;
 import com.mycompany.parchisc5d419.vista.GUIInstrucciones;
+import com.mycompany.parchisc5d419.vista.GUIJugador;
 import com.mycompany.parchisc5d419.vista.GUIPrincipal;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -22,6 +23,7 @@ public class ControladorPrincipal implements ActionListener {
     private GUIInstrucciones guiInstrucciones;
     private GUIHistoria guiHistoria;
     private ControladorJuego controladorJuego;
+    private GUIJugador guiJugador;
 
     public ControladorPrincipal() {
         guiPrincipal = new GUIPrincipal(this);
@@ -29,6 +31,7 @@ public class ControladorPrincipal implements ActionListener {
         guiCredito = new GUICredito(this);
         guiInstrucciones = new GUIInstrucciones(this);
         guiHistoria = new GUIHistoria(this);
+        guiJugador=new GUIJugador(this);
     }
 
     @Override
@@ -36,6 +39,10 @@ public class ControladorPrincipal implements ActionListener {
         switch (e.getActionCommand()) {
             case "Jugar":
                 guiPrincipal.setVisible(false);
+                guiJugador.setVisible(true);
+                //controladorJuego = new ControladorJuego(guiPrincipal);
+                break;
+            case "Continuar":
                 controladorJuego = new ControladorJuego(guiPrincipal);
                 break;
             case "Instrucciones":

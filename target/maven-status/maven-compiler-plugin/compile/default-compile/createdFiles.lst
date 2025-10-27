@@ -4,6 +4,7 @@ com\mycompany\parchisc5d419\modelo\Posicion.class
 com\mycompany\parchisc5d419\vista\PanelControl.class
 com\mycompany\parchisc5d419\vista\GUIPrincipal$2.class
 com\mycompany\parchisc5d419\vista\GUIJuego.class
+com\mycompany\parchisc5d419\vista\GUIJugador.class
 com\mycompany\parchisc5d419\modelo\Tablero.class
 com\mycompany\parchisc5d419\controlador\ControladorJuego.class
 com\mycompany\parchisc5d419\modelo\AreaJuego.class
@@ -16,6 +17,8 @@ com\mycompany\parchisc5d419\modelo\Celda.class
 com\mycompany\parchisc5d419\vista\GUIInstrucciones.class
 com\mycompany\parchisc5d419\vista\GUIHistoria.class
 com\mycompany\parchisc5d419\modelo\CeldaEspecialColor.class
+com\mycompany\parchisc5d419\modelo\Pregunta.class
+com\mycompany\parchisc5d419\modelo\BancoPregunta.class
 com\mycompany\parchisc5d419\vista\PanelJuego.class
 com\mycompany\parchisc5d419\controlador\ControladorPrincipal.class
 com\mycompany\parchisc5d419\vista\GUIPrincipal$1.class

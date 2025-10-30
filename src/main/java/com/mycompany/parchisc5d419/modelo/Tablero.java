@@ -102,7 +102,7 @@ public class Tablero {
             tablero[indice].setFicha(new Ficha(new Posicion(x, y), new ImageIcon("./src/main/resources/img/pieceblack.png"), "negra"));
             x -= 50;
         }
-       
+
         x += 50;
         y += 30;
 
@@ -194,11 +194,24 @@ public class Tablero {
             casaJugador1.setFicha(1, new Ficha(new Posicion(540, 462), new ImageIcon("./src/main/resources/img/pieceyellow.png"), "Amarillo"));
             casaJugador1.setFicha(2, new Ficha(new Posicion(455, 526), new ImageIcon("./src/main/resources/img/pieceyellow.png"), "Amarillo"));
             casaJugador1.setFicha(3, new Ficha(new Posicion(540, 526), new ImageIcon("./src/main/resources/img/pieceyellow.png"), "Amarillo"));
-            casaJugador2 = new Casa("Roja");
-            casaJugador2.setFicha(0, new Ficha(new Posicion(40, 54), new ImageIcon("./src/main/resources/img/piecered.png"), "Roja"));
-            casaJugador2.setFicha(1, new Ficha(new Posicion(131, 54), new ImageIcon("./src/main/resources/img/piecered.png"), "Roja"));
-            casaJugador2.setFicha(2, new Ficha(new Posicion(40, 124), new ImageIcon("./src/main/resources/img/piecered.png"), "Roja"));
-            casaJugador2.setFicha(3, new Ficha(new Posicion(131, 124), new ImageIcon("./src/main/resources/img/piecered.png"), "Roja"));
+            casaJugador2 = new Casa("Rojo");
+            casaJugador2.setFicha(0, new Ficha(new Posicion(40, 54), new ImageIcon("./src/main/resources/img/piecered.png"), "Rojo"));
+            casaJugador2.setFicha(1, new Ficha(new Posicion(131, 54), new ImageIcon("./src/main/resources/img/piecered.png"), "Rojo"));
+            casaJugador2.setFicha(2, new Ficha(new Posicion(40, 124), new ImageIcon("./src/main/resources/img/piecered.png"), "Rojo"));
+            casaJugador2.setFicha(3, new Ficha(new Posicion(131, 124), new ImageIcon("./src/main/resources/img/piecered.png"), "Rojo"));
+        }
+
+        if (colorJugador1.equals("Rojo")) {
+            casaJugador1 = new Casa("Rojo");
+            casaJugador1.setFicha(0, new Ficha(new Posicion(40, 54), new ImageIcon("./src/main/resources/img/piecered.png"), "Rojo"));
+            casaJugador1.setFicha(1, new Ficha(new Posicion(131, 54), new ImageIcon("./src/main/resources/img/piecered.png"), "Rojo"));
+            casaJugador1.setFicha(2, new Ficha(new Posicion(40, 124), new ImageIcon("./src/main/resources/img/piecered.png"), "Rojo"));
+            casaJugador1.setFicha(3, new Ficha(new Posicion(131, 124), new ImageIcon("./src/main/resources/img/piecered.png"), "Rojo"));
+            casaJugador2 = new Casa("Amarillo");
+            casaJugador2.setFicha(0, new Ficha(new Posicion(455, 462), new ImageIcon("./src/main/resources/img/pieceyellow.png"), "Amarillo"));
+            casaJugador2.setFicha(1, new Ficha(new Posicion(540, 462), new ImageIcon("./src/main/resources/img/pieceyellow.png"), "Amarillo"));
+            casaJugador2.setFicha(2, new Ficha(new Posicion(455, 526), new ImageIcon("./src/main/resources/img/pieceyellow.png"), "Amarillo"));
+            casaJugador2.setFicha(3, new Ficha(new Posicion(540, 526), new ImageIcon("./src/main/resources/img/pieceyellow.png"), "Amarillo"));
         }
         if (colorJugador1.equals("Azul")) {
             casaJugador1 = new Casa("Azul");
@@ -212,7 +225,20 @@ public class Tablero {
             casaJugador2.setFicha(2, new Ficha(new Posicion(40, 526), new ImageIcon("./src/main/resources/img/piecegreen.png"), "Verde"));
             casaJugador2.setFicha(3, new Ficha(new Posicion(131, 526), new ImageIcon("./src/main/resources/img/piecegreen.png"), "Verde"));
 
-        }//fin if
+        }
+
+        if (colorJugador1.equals("Verde")) {
+            casaJugador1 = new Casa("Verde");
+            casaJugador1.setFicha(0, new Ficha(new Posicion(40, 462), new ImageIcon("./src/main/resources/img/piecegreen.png"), "Verde"));
+            casaJugador1.setFicha(1, new Ficha(new Posicion(131, 462), new ImageIcon("./src/main/resources/img/piecegreen.png"), "Verde"));
+            casaJugador1.setFicha(2, new Ficha(new Posicion(40, 526), new ImageIcon("./src/main/resources/img/piecegreen.png"), "Verde"));
+            casaJugador1.setFicha(3, new Ficha(new Posicion(131, 526), new ImageIcon("./src/main/resources/img/piecegreen.png"), "Verde"));
+            casaJugador2 = new Casa("Azul");
+            casaJugador2.setFicha(0, new Ficha(new Posicion(455, 54), new ImageIcon("./src/main/resources/img/pieceblue.png"), "Azul"));
+            casaJugador2.setFicha(1, new Ficha(new Posicion(540, 54), new ImageIcon("./src/main/resources/img/pieceblue.png"), "Azul"));
+            casaJugador2.setFicha(2, new Ficha(new Posicion(455, 124), new ImageIcon("./src/main/resources/img/pieceblue.png"), "Azul"));
+            casaJugador2.setFicha(3, new Ficha(new Posicion(540, 124), new ImageIcon("./src/main/resources/img/pieceblue.png"), "Azul"));
+        }
     }
 
     public void dibujar(Component componente, Graphics g) {

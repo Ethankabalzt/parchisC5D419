@@ -37,19 +37,19 @@ public class ControladorJuego implements ActionListener, MouseListener {
     private String[] jugadores = {"Jugador 1", "Jugador 2"};
     private String[] colores = {"Amarillo", "Azul"};
 
-    public ControladorJuego(GUIPrincipal guiPrincipal) {
+    public ControladorJuego(GUIPrincipal guiPrincipal, String colorJugador1, String nombreJugador1, String nombreJugador2) {
         this.guiPrincipal = guiPrincipal;
         guiJuego = new GUIJuego(this);
         guiJuego.setVisible(true);
         panelJuego = guiJuego.getPanelJuego();
         panelControl = guiJuego.getPanelControl();
-        areaJuego = new AreaJuego();
-        ficha = new Ficha(new Posicion(100, 100), new ImageIcon("./src/main/resources/img/pieceyellow.png"), "Amarillo");
+        areaJuego = new AreaJuego(colorJugador1,nombreJugador1,nombreJugador2);
+        //ficha = new Ficha(new Posicion(100, 100), new ImageIcon("./src/main/resources/img/pieceyellow.png"), "Amarillo");
         //(453,468)
     }
 
     public void dibujar(Component c, Graphics g) {
-        ficha.dibujar(c, g);
+        //ficha.dibujar(c, g);
         areaJuego.dibujar(c, g);
     }
 

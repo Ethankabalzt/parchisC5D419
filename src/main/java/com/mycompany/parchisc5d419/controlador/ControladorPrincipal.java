@@ -43,7 +43,10 @@ public class ControladorPrincipal implements ActionListener {
                 //controladorJuego = new ControladorJuego(guiPrincipal);
                 break;
             case "Continuar":
-                controladorJuego = new ControladorJuego(guiPrincipal);
+                System.out.println(guiJugador.getCbColor());
+                System.out.println(guiJugador.getTxJugador1());
+                System.out.println(guiJugador.getTxJugador2());
+                controladorJuego = new ControladorJuego(guiPrincipal,guiJugador.getCbColor(),guiJugador.getTxJugador1(),guiJugador.getTxJugador2());
                 break;
             case "Instrucciones":
                 guiPrincipal.setVisible(false);

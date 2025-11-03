@@ -6,6 +6,7 @@ package com.mycompany.parchisc5d419.modelo;
 
 import java.awt.Component;
 import java.awt.Graphics;
+import java.awt.Rectangle;
 import javax.swing.ImageIcon;
 
 /**
@@ -13,14 +14,23 @@ import javax.swing.ImageIcon;
  * @author Usuario
  */
 public class Ficha {
+
     private Posicion posicion;
     private ImageIcon imagen;
     private String color;
+    private Rectangle hitbox;
+    private boolean isTablero;
 
     public Ficha(Posicion posicion, ImageIcon imagen, String color) {
         this.posicion = posicion;
         this.imagen = imagen;
         this.color = color;
+        hitbox = new Rectangle(posicion.getX(), posicion.getY(), 30,  30);//posicion.getX() + 30, posicion.getY() + 30
+        isTablero=false;
+    }
+
+    public boolean isContainer(int x, int y) {
+        return hitbox.contains(x, y);
     }
 
     public Posicion getPosicion() {
@@ -46,9 +56,8 @@ public class Ficha {
     public void setColor(String color) {
         this.color = color;
     }
-    
-    
-    public void dibujar(Component c, Graphics g){
-    imagen.paintIcon(c, g, posicion.getX(), posicion.getY());
+
+    public void dibujar(Component c, Graphics g) {
+        imagen.paintIcon(c, g, posicion.getX(), posicion.getY());
     }
 }

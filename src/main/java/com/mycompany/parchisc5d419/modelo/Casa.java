@@ -46,4 +46,8 @@ public class Casa {
             }//for
         }//fin if
     }
+
+    public int getCantidadFichas() {
+        return fichas.length;
+    }
 }
